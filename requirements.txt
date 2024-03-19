@@ -5,3 +5,4 @@ pip install mysql.connector
 pip install streamlit
 pip install isodate
 pip install datetime
+pip install plotly
