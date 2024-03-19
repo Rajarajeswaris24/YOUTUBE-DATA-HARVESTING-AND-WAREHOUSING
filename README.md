@@ -22,14 +22,14 @@ Note:Take small channel which have minimum videos because there is a limit quota
 
 Storing data in MongoDB:
 
-The retrieved data is stored in a MongoDB database YouTube_Data with three collections channel , video and comments.For transfering channel details,I have created an empty list to store the channel id which transfered to mongodb. If I again transfer the same channel details to mongodb it shows message channel Id already exits.I have used st.session_state for transferring video and comment details to mongodb for avoiding duplication.If I again click the button it shows message details already transformed .
+The retrieved data is stored in a MongoDB database YouTube_Data with three collections channel , video and comments.For transfering channel details,I have created an empty list to store the channel id which transfered to mongodb. If I again transfer the same channel details to mongodb it shows message channel Id already exits.Using distinct stored the channel_id in a list for transferring video and comment details to mongodb for avoiding duplication.If I again click the button it shows message details already exists .
 
 Migrating data to a SQL: 
 
-The application allows users to migrate data from MongoDB to a MySQL.Now the information is segregated into separate tables, including channels, videos, and comments.First it will drop the table if exists and then create a table and insert the documents.Create a table in mysql workbench before migrating.
+The application allows users to migrate data from MongoDB to a MySQL.Now the information is segregated into separate tables, including channels, videos, and comments.From the input app migrates one particular channel to three tables.Setting primary key and using query count(* ) duplications will not be inserted throws message details already transformed.
 Note: I have converted the published_date and duration in datetime and time format respectively while collecting data. Tags will be in list which will not insert in mysql so I have converted  to comma seperated.
 Note: In colab mysql connection will not support. So kindly use visual code or pycharm.
 
 Queries:
 
-There are 10 queries with result.
+There are 10 queries with visualization insights.
