@@ -1,4 +1,8 @@
+
+Demo video:https://drive.google.com/file/d/1e2B7GNVERM5imWSgvpT6QKZCxlPWj_en/view?usp=drive_link
+
 Problem Statement: 
+
 The problem statement is to create a Streamlit application that allows users to access and analyze data from multiple YouTube channels. The application should have the following features: 
 1. Ability to input a YouTube channel ID and retrieve all the relevant data(Channel name, subscribers, total video count, playlist ID, video ID, likes,dislikes, comments of each video) using Google API. 
 2. Ability to collect data for up to 10 different YouTube channels and store them in the mongodb by clicking a button. 
@@ -7,6 +11,7 @@ The problem statement is to create a Streamlit application that allows users to 
 
 
 To run this project,
+
 1.You need to install the packages from requirements.txt
 2.You have to create api key to collect data from youtube.
 3.Connection string for mongodb.
